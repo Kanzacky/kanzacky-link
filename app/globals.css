@@ -151,10 +151,16 @@ body {
   background: var(--theme-bg);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 ::selection {
   background: var(--theme-selection-bg);
   color: var(--theme-selection-text);
+}
+
+/* Universal transition for smooth theme switching */
+*, ::before, ::after {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
