@@ -12,7 +12,7 @@ export default function ThemeToggle() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 3.2, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-6 right-6 z-[9998] p-2.5 rounded-full
+      className="fixed top-6 right-6 z-[9998] w-9 h-9 flex items-center justify-center rounded-full
         bg-theme-card border border-theme-border backdrop-blur-md
         hover:bg-theme-card-hover hover:border-theme-border-hover
         active:scale-95 transition-all duration-300 shadow-lg
@@ -30,13 +30,12 @@ export default function ThemeToggle() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-theme-muted group-hover:text-theme-primary transition-colors duration-300"
+        className="absolute text-theme-muted group-hover:text-theme-primary transition-colors duration-300"
         initial={false}
         animate={{
           scale: theme === "dark" ? 1 : 0,
           opacity: theme === "dark" ? 1 : 0,
           rotate: theme === "dark" ? 0 : -90,
-          position: theme === "dark" ? "relative" : "absolute",
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
@@ -62,13 +61,12 @@ export default function ThemeToggle() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-theme-muted group-hover:text-theme-primary transition-colors duration-300"
+        className="absolute text-theme-muted group-hover:text-theme-primary transition-colors duration-300"
         initial={false}
         animate={{
           scale: theme === "light" ? 1 : 0,
           opacity: theme === "light" ? 1 : 0,
           rotate: theme === "light" ? 0 : 90,
-          position: theme === "light" ? "relative" : "absolute",
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
