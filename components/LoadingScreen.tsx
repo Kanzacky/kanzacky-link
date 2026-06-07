@@ -45,7 +45,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[10000] flex items-center justify-center bg-zinc-950"
+          className="fixed inset-0 z-[10000] flex items-center justify-center bg-theme-loading-bg transition-colors duration-500"
         >
           <motion.div
             exit={{ opacity: 0, scale: 0.95, filter: "blur(8px)" }}
@@ -57,13 +57,13 @@ export default function LoadingScreen() {
               initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-              className="text-zinc-300 font-medium tracking-[0.4em] text-[10px] pl-[0.4em] uppercase"
+              className="text-theme-loading-text font-medium tracking-[0.4em] text-[10px] pl-[0.4em] uppercase transition-colors duration-500"
             >
               Z A N
             </motion.div>
 
             {/* Premium Thin Progress Line - Bolak Balik 2 Kali */}
-            <div className="relative w-full h-[1px] bg-zinc-800/30 rounded-full overflow-hidden">
+            <div className="relative w-full h-[1px] bg-theme-loading-track rounded-full overflow-hidden transition-colors duration-500">
               <motion.div
                 initial={{ left: "0%" }}
                 animate={{ left: "66.66%" }}
@@ -74,7 +74,8 @@ export default function LoadingScreen() {
                   repeatType: "reverse",
                   delay: 0.3,
                 }}
-                className="absolute top-0 bottom-0 w-1/3 bg-zinc-300 shadow-[0_0_10px_rgba(255,255,255,0.5)] rounded-full"
+                className="absolute top-0 bottom-0 w-1/3 bg-theme-loading-bar rounded-full"
+                style={{ boxShadow: "0 0 10px var(--theme-loading-bar-glow)" }}
               />
             </div>
           </motion.div>

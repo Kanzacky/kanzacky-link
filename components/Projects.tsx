@@ -20,7 +20,7 @@ export default function Projects() {
         {/* Subtle Title */}
         <motion.h3
           variants={itemVariants}
-          className="text-[10px] text-zinc-600 font-bold tracking-[0.3em] uppercase mb-8 text-center"
+          className="text-[10px] text-theme-faint font-bold tracking-[0.3em] uppercase mb-8 text-center transition-colors duration-500"
         >
           Selected Works
         </motion.h3>
@@ -28,10 +28,10 @@ export default function Projects() {
         {/* Project 1 */}
         <motion.a
           variants={itemVariants}
-          href="https://github.com/Kanzacky/Campus-Connect-UNIPMA"
+          href="https://github.com/Kanzacky/Campus-Connect-UNIPMA.git"
           target="_blank"
           rel="noopener noreferrer"
-          className="group w-full block p-5 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 backdrop-blur-md hover:bg-zinc-800/60 hover:border-zinc-700/60 transition-all duration-500 mb-4"
+          className="group w-full block p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md hover:bg-theme-card-hover hover:border-theme-border-hover transition-all duration-500 mb-4"
         >
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center gap-2.5">
@@ -55,13 +55,13 @@ export default function Projects() {
                   </svg>
                 </div>
               </div>
-              <h4 className="text-zinc-200 font-medium tracking-wide text-sm group-hover:text-blue-400 transition-colors">
+              <h4 className="text-theme-secondary font-medium tracking-wide text-sm group-hover:text-blue-400 transition-colors">
                 Campus Connect
               </h4>
             </div>
           </div>
 
-          <p className="text-[13px] text-zinc-400 leading-relaxed mb-5">
+          <p className="text-[13px] text-theme-muted leading-relaxed mb-5 transition-colors duration-500">
             Platform manajemen terpusat untuk organisasi & ukm kampus dengan fitur role-based access control, penjadwalan event, dan pengumuman real-time. Arsitektur full-stack berbasis Laravel API dan React SPA.
           </p>
 
@@ -87,8 +87,8 @@ export default function Projects() {
               TypeScript
             </span>
             {/* Fullstack Badge */}
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-zinc-800/50 border border-zinc-700/50 text-zinc-300 text-[10px] font-medium tracking-wide">
-              <Database className="w-3 h-3 text-zinc-400" />
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-theme-card border border-theme-border text-theme-secondary text-[10px] font-medium tracking-wide transition-colors duration-500">
+              <Database className="w-3 h-3 text-theme-muted" />
               Fullstack
             </span>
           </div>
@@ -100,7 +100,7 @@ export default function Projects() {
           href="https://github.com/Kanzacky/DotaWinIQR"
           target="_blank"
           rel="noopener noreferrer"
-          className="group w-full block p-5 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 backdrop-blur-md hover:bg-zinc-800/60 hover:border-zinc-700/60 transition-all duration-500"
+          className="group w-full block p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md hover:bg-theme-card-hover hover:border-theme-border-hover transition-all duration-500"
         >
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center gap-2.5">
@@ -115,13 +115,13 @@ export default function Projects() {
                   />
                 </div>
               </div>
-              <h4 className="text-zinc-200 font-medium tracking-wide text-sm group-hover:text-red-400 transition-colors">
+              <h4 className="text-theme-secondary font-medium tracking-wide text-sm group-hover:text-red-400 transition-colors">
                 Dota 2 Win IQR
               </h4>
             </div>
           </div>
 
-          <p className="text-[13px] text-zinc-400 leading-relaxed mb-5">
+          <p className="text-[13px] text-theme-muted leading-relaxed mb-5 transition-colors duration-500">
             Pipeline machine learning untuk memprediksi hasil pertandingan menggunakan pemodelan statistik dan feature engineering berbasis IQR. Berfokus pada kurasi data dan optimasi model.
           </p>
 
@@ -159,7 +159,7 @@ export default function Projects() {
             href="https://github.com/Kanzacky"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 text-[12px] font-medium text-zinc-500 hover:text-zinc-300 transition-colors"
+            className="group flex items-center gap-2 text-[12px] font-medium text-theme-subtle hover:text-theme-secondary transition-colors"
           >
             See more on GitHub
             <svg

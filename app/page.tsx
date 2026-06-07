@@ -14,7 +14,7 @@ export default function Home() {
       <Contact />
 
       <footer className="w-full py-10 mt-auto flex justify-center">
-        <p className="text-[9px] sm:text-[10px] text-zinc-600 tracking-[0.2em] uppercase">
+        <p className="text-[9px] sm:text-[10px] text-theme-footer-text tracking-[0.2em] uppercase transition-colors duration-500">
           © {new Date().getFullYear()} Zaki Adi Nugroho. All rights reserved.
         </p>
       </footer>

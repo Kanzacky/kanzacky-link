@@ -50,7 +50,7 @@ export default function CurrentFocus() {
         {/* Subtle Title */}
         <motion.h3
           variants={itemVariants}
-          className="text-[10px] text-zinc-600 font-bold tracking-[0.3em] uppercase mb-8 text-center"
+          className="text-[10px] text-theme-faint font-bold tracking-[0.3em] uppercase mb-8 text-center transition-colors duration-500"
         >
           Current Focus
         </motion.h3>
@@ -60,10 +60,10 @@ export default function CurrentFocus() {
           {focuses.map((focus, index) => (
             <motion.div key={index} variants={itemVariants} className="w-full">
               <div
-                className={`group relative w-full flex items-start gap-4 p-5 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 backdrop-blur-md transition-all duration-500 hover:bg-zinc-800/60 ${focus.borderColor}`}
+                className={`group relative w-full flex items-start gap-4 p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md transition-all duration-500 hover:bg-theme-card-hover ${focus.borderColor}`}
               >
                 {/* Icon Container */}
-                <div className="relative shrink-0 flex items-center justify-center w-10 h-10 rounded-2xl bg-zinc-950 border border-zinc-800/50 group-hover:border-zinc-700/50 transition-colors duration-500 mt-0.5">
+                <div className="relative shrink-0 flex items-center justify-center w-10 h-10 rounded-2xl bg-theme-icon-bg border border-theme-icon-border group-hover:border-theme-border-hover transition-colors duration-500 mt-0.5">
                   <div
                     className={`absolute inset-0 ${focus.bgGlow} rounded-2xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                   />
@@ -75,10 +75,10 @@ export default function CurrentFocus() {
 
                 {/* Text Container */}
                 <div className="flex flex-col gap-1.5">
-                  <h4 className="text-sm font-medium text-zinc-200 tracking-wide group-hover:text-white transition-colors duration-500">
+                  <h4 className="text-sm font-medium text-theme-secondary tracking-wide group-hover:text-theme-primary transition-colors duration-500">
                     {focus.title}
                   </h4>
-                  <p className="text-[13px] text-zinc-500 leading-relaxed group-hover:text-zinc-400 transition-colors duration-500">
+                  <p className="text-[13px] text-theme-subtle leading-relaxed group-hover:text-theme-muted transition-colors duration-500">
                     {focus.description}
                   </p>
                 </div>
