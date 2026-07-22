@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "./variants";
-import { Database, BrainCircuit } from "lucide-react";
+import { Database, BrainCircuit, Activity } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -28,7 +28,7 @@ export default function Projects() {
         {/* Project 1 */}
         <motion.a
           variants={itemVariants}
-          href="https://github.com/Kanzacky/Campus-Connect-UNIPMA.git"
+          href="https://github.com/Kanzacky/Campus-Connect.git"
           target="_blank"
           rel="noopener noreferrer"
           className="group w-full block p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md hover:bg-theme-card-hover hover:border-theme-border-hover transition-all duration-500 mb-4"
@@ -62,7 +62,7 @@ export default function Projects() {
           </div>
 
           <p className="text-[13px] text-theme-muted leading-relaxed mb-5 transition-colors duration-500">
-            Platform manajemen terpusat untuk organisasi & ukm kampus dengan fitur role-based access control, penjadwalan event, dan pengumuman real-time. Arsitektur full-stack berbasis Laravel API dan React SPA.
+            Platform manajemen terpusat untuk organisasi & ukm kampus (UNIPMA) dengan sistem role-based access control. Dibangun menggunakan arsitektur headless dengan Laravel REST API dan frontend Next.js.
           </p>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -71,25 +71,25 @@ export default function Projects() {
               <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" className="w-3 h-3" />
               Laravel
             </span>
-            {/* React Badge */}
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-medium tracking-wide">
-              <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-3 h-3" />
-              React
-            </span>
-            {/* Inertia.js Badge */}
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-medium tracking-wide">
-              <img src="https://cdn.simpleicons.org/inertia/A855F7" alt="Inertia.js" className="w-3 h-3" />
-              Inertia.js
+            {/* Next.js Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-zinc-500/10 border border-zinc-500/20 text-zinc-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" className="w-3 h-3 dark:invert" />
+              Next.js
             </span>
             {/* TypeScript Badge */}
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-medium tracking-wide">
               <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" className="w-3 h-3" />
               TypeScript
             </span>
+            {/* Tailwind CSS Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/tailwindcss/38B2AC" alt="Tailwind CSS" className="w-3 h-3" />
+              Tailwind
+            </span>
             {/* Fullstack Badge */}
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-theme-card border border-theme-border text-theme-secondary text-[10px] font-medium tracking-wide transition-colors duration-500">
               <Database className="w-3 h-3 text-theme-muted" />
-              Fullstack
+              Headless
             </span>
           </div>
         </motion.a>
@@ -97,7 +97,7 @@ export default function Projects() {
         {/* Project 2 */}
         <motion.a
           variants={itemVariants}
-          href="https://github.com/Kanzacky/DotaWinIQR"
+          href="https://github.com/Kanzacky/ML-Prediksi-Penyakit-Jantung"
           target="_blank"
           rel="noopener noreferrer"
           className="group w-full block p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md hover:bg-theme-card-hover hover:border-theme-border-hover transition-all duration-500"
@@ -105,24 +105,19 @@ export default function Projects() {
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center gap-2.5">
               <div className="relative">
-                <div className="absolute inset-0 bg-red-500/15 rounded-full blur-xl" />
+                <div className="absolute inset-0 bg-rose-500/15 rounded-full blur-xl" />
                 <div className="relative z-10 p-1">
-                  <img
-                    src="https://cdn.simpleicons.org/dota2/EF4444"
-                    alt="Dota 2"
-                    width={16}
-                    height={16}
-                  />
+                  <Activity className="w-4 h-4 text-rose-400" />
                 </div>
               </div>
-              <h4 className="text-theme-secondary font-medium tracking-wide text-sm group-hover:text-red-400 transition-colors">
-                Dota 2 Win IQR
+              <h4 className="text-theme-secondary font-medium tracking-wide text-sm group-hover:text-rose-400 transition-colors">
+                Prediksi Penyakit Jantung
               </h4>
             </div>
           </div>
 
           <p className="text-[13px] text-theme-muted leading-relaxed mb-5 transition-colors duration-500">
-            Pipeline machine learning untuk memprediksi hasil pertandingan menggunakan pemodelan statistik dan feature engineering berbasis IQR. Berfokus pada kurasi data dan optimasi model.
+            Aplikasi fullstack Machine Learning untuk memprediksi risiko penyakit jantung. Model klasifikasi dikembangkan dengan Scikit-Learn dan disajikan melalui REST API FastAPI dengan frontend React & Vite.
           </p>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -131,10 +126,15 @@ export default function Projects() {
               <img src="https://cdn.simpleicons.org/python/FFD43B" alt="Python" className="w-3 h-3" />
               Python
             </span>
-            {/* Jupyter Badge */}
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-orange-500/10 border border-orange-500/20 text-orange-400 text-[10px] font-medium tracking-wide">
-              <img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" className="w-3 h-3" />
-              Jupyter
+            {/* FastAPI Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" className="w-3 h-3" />
+              FastAPI
+            </span>
+            {/* React Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-3 h-3" />
+              React
             </span>
             {/* Scikit-learn Badge */}
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-medium tracking-wide">
@@ -142,9 +142,9 @@ export default function Projects() {
               Scikit-learn
             </span>
             {/* Data Science Badge */}
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-medium tracking-wide">
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-theme-card border border-theme-border text-theme-secondary text-[10px] font-medium tracking-wide transition-colors duration-500">
               <BrainCircuit className="w-3 h-3 text-emerald-400" />
-              Data Science
+              Machine Learning
             </span>
           </div>
         </motion.a>

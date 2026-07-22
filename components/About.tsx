@@ -97,20 +97,25 @@ export default function About() {
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-theme-secondary group-hover:bg-theme-primary transition-colors duration-500"></span>
               </span>
-              <div className="flex flex-col gap-1.5 p-4 rounded-2xl bg-theme-card border border-theme-border-hover backdrop-blur-sm group-hover:bg-theme-card-hover transition-all duration-500">
-                <span
-                  className="text-[10px] text-theme-muted font-mono tracking-widest uppercase transition-colors duration-500"
-                  style={{ filter: "drop-shadow(0 0 4px var(--theme-accent-glow))" }}
-                >
-                  2023 — Present
-                </span>
-                <h4
-                  className="text-[14px] text-theme-heading font-semibold transition-all duration-500"
-                  style={{ filter: "drop-shadow(0 0 8px var(--theme-accent-glow))" }}
-                >
-                  Universitas PGRI Madiun
-                </h4>
-                <p className="text-[12px] text-theme-muted transition-colors duration-500">Teknik Informatika</p>
+              <div className="flex items-center justify-between p-4 rounded-2xl bg-theme-card border border-theme-border-hover backdrop-blur-sm group-hover:bg-theme-card-hover transition-all duration-500">
+                <div className="flex flex-col gap-1.5">
+                  <span
+                    className="text-[10px] text-theme-muted font-mono tracking-widest uppercase transition-colors duration-500"
+                    style={{ filter: "drop-shadow(0 0 4px var(--theme-accent-glow))" }}
+                  >
+                    2023 — Present
+                  </span>
+                  <h4
+                    className="text-[14px] text-theme-heading font-semibold transition-all duration-500"
+                    style={{ filter: "drop-shadow(0 0 8px var(--theme-accent-glow))" }}
+                  >
+                    Universitas PGRI Madiun
+                  </h4>
+                  <p className="text-[12px] text-theme-muted transition-colors duration-500">Teknik Informatika</p>
+                </div>
+                <div className="shrink-0 ml-3 mr-2">
+                  <img src="/unipma.png" alt="UNIPMA Logo" className="w-[50px] h-[50px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
               </div>
             </motion.div>
           </div>

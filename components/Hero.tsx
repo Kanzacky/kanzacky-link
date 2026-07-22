@@ -31,11 +31,11 @@ export default function Hero() {
               style={{ background: "var(--theme-photo-overlay)" }}
             ></div>
             <Image
-              src="/iii.jpeg"
+              src="/sadi.jpeg"
               alt="Zaki Adi Nugroho"
               fill
               sizes="(max-width: 768px) 128px, 128px"
-              className="object-cover filter grayscale hover:grayscale-0 transition-colors duration-700 ease-in-out"
+              className="object-cover object-top translate-y-3 scale-[1.25] transition-all duration-700 ease-in-out"
               priority
             />
           </div>

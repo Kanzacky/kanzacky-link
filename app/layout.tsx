@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Zaki Adi Nugroho Portfolio",
     images: [
       {
-        url: "/iii.jpeg",
+        url: "/sadi.jpeg",
         width: 800,
         height: 800,
         alt: "Zaki Adi Nugroho Profile",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zaki Adi Nugroho",
     description: "Portfolio of Zaki Adi Nugroho, berfokus pada Platform Web, AI & Data, dan Sistem Backend.",
-    images: ["/iii.jpeg"],
+    images: ["/sadi.jpeg"],
   },
 };
 
