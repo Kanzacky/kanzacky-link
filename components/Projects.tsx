@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "./variants";
-import { Database, BrainCircuit, Activity } from "lucide-react";
+import { Database, BrainCircuit, Activity, Gamepad2 } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -149,6 +149,55 @@ export default function Projects() {
           </div>
         </motion.a>
 
+        {/* Project 3 */}
+        <motion.a
+          variants={itemVariants}
+          href="https://github.com/Kanzacky/Fuzzy-Item-Picker-Dota2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group w-full block p-5 rounded-3xl bg-theme-card border border-theme-border backdrop-blur-md hover:bg-theme-card-hover hover:border-theme-border-hover transition-all duration-500"
+        >
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center gap-2.5">
+              <div className="relative">
+                <div className="absolute inset-0 bg-purple-500/15 rounded-full blur-xl" />
+                <div className="relative z-10 p-1">
+                  <Gamepad2 className="w-4 h-4 text-purple-400" />
+                </div>
+              </div>
+              <h4 className="text-theme-secondary font-medium tracking-wide text-sm group-hover:text-purple-400 transition-colors">
+                Fuzzy Item Picker Dota 2
+              </h4>
+            </div>
+          </div>
+
+          <p className="text-[13px] text-theme-muted leading-relaxed mb-5 transition-colors duration-500">
+            Sistem rekomendasi item Dota 2 berbasis Fuzzy Logic. Web app yang memberikan dynamic item build recommendations menggunakan mesin scoring fuzzy across 10 parameter kebutuhan.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {/* TypeScript Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" className="w-3 h-3" />
+              TypeScript
+            </span>
+            {/* Next.js Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-zinc-500/10 border border-zinc-500/20 text-zinc-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" className="w-3 h-3 dark:invert" />
+              Next.js
+            </span>
+            {/* Tailwind CSS Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-medium tracking-wide">
+              <img src="https://cdn.simpleicons.org/tailwindcss/38B2AC" alt="Tailwind CSS" className="w-3 h-3" />
+              Tailwind
+            </span>
+            {/* Fuzzy Logic Badge */}
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-medium tracking-wide">
+              <Gamepad2 className="w-3 h-3" />
+              Fuzzy Logic
+            </span>
+          </div>
+        </motion.a>
 
         {/* See More Link */}
         <motion.div
