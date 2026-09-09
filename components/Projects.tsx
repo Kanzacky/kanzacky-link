@@ -175,7 +175,7 @@ export default function Projects() {
             Sistem rekomendasi item Dota 2 berbasis Fuzzy Logic. Web app yang memberikan dynamic item build recommendations menggunakan mesin scoring fuzzy across 10 parameter kebutuhan.
           </p>
 
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 mb-4">
             {/* TypeScript Badge */}
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-medium tracking-wide">
               <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" className="w-3 h-3" />
@@ -197,6 +197,22 @@ export default function Projects() {
               Fuzzy Logic
             </span>
           </div>
+
+          {/* Live Demo Link */}
+          <a
+            href="https://zakiadinugroho.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-500/15 border border-purple-500/25 text-purple-400 text-[11px] font-medium tracking-wide hover:bg-purple-500/25 hover:border-purple-500/40 transition-all duration-300"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+            Live Demo
+          </a>
         </motion.a>
 
         {/* See More Link */}
