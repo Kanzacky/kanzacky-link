@@ -74,7 +74,7 @@ export default function About() {
                 <span className="w-1 h-1 rounded-full bg-theme-faint group-hover:bg-theme-muted transition-colors duration-500"></span>
               </span>
               <div className="flex items-center justify-between p-4 rounded-2xl bg-theme-card border border-theme-border backdrop-blur-sm group-hover:bg-theme-card-hover group-hover:border-theme-border-hover transition-all duration-500">
-                <div className="flex flex-col gap-1.5">
+                <div className="flex flex-col gap-1.5 min-w-0">
                   <span className="text-[10px] text-theme-subtle font-mono tracking-widest uppercase transition-colors duration-500">
                     2019 — 2022
                   </span>
@@ -85,8 +85,8 @@ export default function About() {
                     Teknik Kendaraan Ringan
                   </p>
                 </div>
-                <div className="shrink-0 ml-3 mr-2">
-                  <img src="/nekat.png" alt="SMK Negeri Kartoharjo Logo" className="w-[84px] h-[84px] object-contain ml-10 opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="shrink-0 ml-3 mr-1">
+                  <img src="/nekat.png" alt="SMK Negeri Kartoharjo Logo" className="w-[60px] h-[60px] sm:w-[84px] sm:h-[84px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
             </motion.div>
