@@ -73,16 +73,21 @@ export default function About() {
               <span className="absolute left-0 top-1.5 w-3 h-3 rounded-full border border-theme-border bg-theme-timeline-dot-bg flex items-center justify-center group-hover:border-theme-subtle transition-colors duration-500">
                 <span className="w-1 h-1 rounded-full bg-theme-faint group-hover:bg-theme-muted transition-colors duration-500"></span>
               </span>
-              <div className="flex flex-col gap-1.5 p-4 rounded-2xl bg-theme-card border border-theme-border backdrop-blur-sm group-hover:bg-theme-card-hover group-hover:border-theme-border-hover transition-all duration-500">
-                <span className="text-[10px] text-theme-subtle font-mono tracking-widest uppercase transition-colors duration-500">
-                  2019 — 2022
-                </span>
-                <h4 className="text-[14px] text-theme-secondary font-medium group-hover:text-theme-primary transition-colors duration-500">
-                  SMK Negeri Kartoharjo
-                </h4>
-                <p className="text-[12px] text-theme-subtle transition-colors duration-500">
-                  Teknik Kendaraan Ringan
-                </p>
+              <div className="flex items-center justify-between p-4 rounded-2xl bg-theme-card border border-theme-border backdrop-blur-sm group-hover:bg-theme-card-hover group-hover:border-theme-border-hover transition-all duration-500">
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-[10px] text-theme-subtle font-mono tracking-widest uppercase transition-colors duration-500">
+                    2019 — 2022
+                  </span>
+                  <h4 className="text-[14px] text-theme-secondary font-medium group-hover:text-theme-primary transition-colors duration-500">
+                    SMK Negeri Kartoharjo
+                  </h4>
+                  <p className="text-[12px] text-theme-subtle transition-colors duration-500">
+                    Teknik Kendaraan Ringan
+                  </p>
+                </div>
+                <div className="shrink-0 ml-3 mr-2">
+                  <img src="/nekat.png" alt="SMK Negeri Kartoharjo Logo" className="w-[50px] h-[50px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
               </div>
             </motion.div>
 
