@@ -119,7 +119,7 @@ export default function About() {
                   <p className="text-[12px] text-theme-muted transition-colors duration-500">Teknik Informatika</p>
                 </div>
                 <div className="shrink-0 ml-3 mr-2">
-                  <img src="/unipma.png" alt="UNIPMA Logo" className="w-[74px] h-[74px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                  <img src="/unipma.png" alt="UNIPMA Logo" className="w-[64px] h-[64px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
             </motion.div>
