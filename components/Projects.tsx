@@ -336,12 +336,6 @@ export default function Projects() {
           </motion.a>
         </div>
 
-        {/* Scroll Indicator Dots */}
-        <div className="flex justify-center gap-2 mt-6">
-          <span className="w-2 h-2 rounded-full bg-theme-muted transition-colors duration-500"></span>
-          <span className="w-2 h-2 rounded-full bg-theme-faint transition-colors duration-500"></span>
-        </div>
-
         {/* See More Link */}
         <motion.div
           variants={itemVariants}
