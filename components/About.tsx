@@ -86,7 +86,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="shrink-0 ml-3 mr-2">
-                  <img src="/nekat.png" alt="SMK Negeri Kartoharjo Logo" className="w-[50px] h-[50px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                  <img src="/nekat.png" alt="SMK Negeri Kartoharjo Logo" className="w-[60px] h-[60px] object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
             </motion.div>
